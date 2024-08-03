@@ -9,7 +9,7 @@ if ($_POST["submit"]){
     if (!move_uploaded_file($pdf_file['tmp_name'], $upload_file)) { 
         die("Possible file upload attack!");
     }
-    echo $upload_file;
+    // echo $upload_file;
 
     try {
         $imagick = new Imagick();
